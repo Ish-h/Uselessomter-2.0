@@ -1,12 +1,50 @@
-# React + Vite
+# Uselessometer 2.0 🎯
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Basic Details
+**Team Name:** The Solo Useless Hero  
+**Team Members:**  Me Myself
+**Team Lead:** Isha Hussian - Sahrdaya College of Engineering and Technology  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Project Description
+Uselessometer 2.0 is a highly advanced, totally unnecessary AI-powered device that measures just how useless your project really is — with style, sarcasm, and sparkles ✨. It gives you a **Uselessness Score** and even prints you a useless certificate of mediocrity.  
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## The Problem (that doesn't exist)
+How do you *scientifically* prove that your friend’s hackathon idea is complete trash?  
+There’s no certified way to measure “Wow, this is pointless” — until now.  
+
+---
+
+## The Solution (that nobody asked for)
+We built an AI-powered system that rates your idea on **Actual Usefulness**, **Overthinking Quotient**, **Trashiness**, and other life-changing metrics.  
+It then generates a roast, a fake certificate, and maybe a therapy recommendation for *extremely useless* ideas.  
+
+---
+
+## Technical Details  
+
+### Technologies/Components Used  
+
+**For Software:**  
+- **Languages:** JavaScript  
+- **Frameworks:** React  
+- **Libraries:** html2pdf.js, CSS animations  
+- **Tools:** Vite, GitHub, HTML5, Node.js  
+
+**For Hardware:**  
+- None. Just pure brainpower and questionable creativity.  
+
+---
+
+## Implementation  
+
+**For Software:**  
+
+### Installation  
+```bash
+git clone https://github.com/Ish-h/Uselessomter-2.0.git
+cd Uselessomter-2.0
+npm install
