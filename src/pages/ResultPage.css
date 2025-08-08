@@ -1,0 +1,94 @@
+.result-container {
+  background-color: #fff0f5;
+  padding: 3rem;
+  text-align: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.result-title {
+  font-size: 3rem;
+  color: #d4145a;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.uselessness-box {
+  background-color: #ffe4ec;
+  border: 4px dashed #d4145a;
+  padding: 2rem;
+  width: 60%;
+  margin: auto;
+  border-radius: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+  animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.score-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.score-value {
+  font-size: 4rem;
+  color: #d4145a;
+  margin: 1rem 0;
+}
+
+.score-commentary {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #555;
+}
+
+.certificate-btn {
+  background-color: #ff69b4;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.certificate-btn:hover {
+  background-color: #d4145a;
+}
+
+.therapist-bot {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.bot-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.bot-bubble {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 15px;
+  max-width: 250px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 0.9rem;
+  color: #333;
+}

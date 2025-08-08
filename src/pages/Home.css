@@ -1,0 +1,87 @@
+/* Background + Layout */
+.home-container {
+  background: linear-gradient(135deg, #fff1e6, #ffe6f7, #e6fff9);
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+}
+
+/* Center Box */
+.center-box {
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 30px;
+  padding: 3rem 4rem;
+  text-align: center;
+  box-shadow: 0 0 30px #ff69b4;
+  animation: wiggle 3s infinite ease-in-out;
+  border: 4px dashed transparent;
+  background-clip: padding-box;
+  border-image: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc, #ffcc00) 1;
+}
+
+/* Header Text */
+.center-box h1 {
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  background: linear-gradient(45deg, #ff00cc, #00ccff, #ffcc00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 900;
+}
+
+/* Fun Button */
+.fun-button {
+  padding: 1.5rem 3rem;
+  font-size: 2rem;
+  font-weight: 900;
+  border-radius: 1.5rem;
+  color: white;
+  background: linear-gradient(45deg, #ff00cc, #3333ff, #00ffcc);
+  background-size: 300% 300%;
+  animation: gradientFlow 3s ease infinite, buttonSquish 2s infinite;
+  box-shadow: 0 0 20px rgba(255, 0, 200, 0.5), 0 0 40px rgba(0, 200, 255, 0.5);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.fun-button:hover {
+  transform: scale(1.1) rotate(-2deg);
+  box-shadow: 0 0 30px rgba(255, 0, 200, 0.7), 0 0 60px rgba(0, 200, 255, 0.7);
+}
+
+/* Emoji Chaos */
+.floating-emoji {
+  position: absolute;
+  font-size: 2.5rem;
+  animation: zoomInOut 0.8s infinite alternate;
+  left: calc(10% + 80% * var(--rand-x, 0));
+  top: calc(10% + 80% * var(--rand-y, 0));
+}
+
+/* Animations */
+@keyframes wiggle {
+  0%, 100% { transform: translateY(-5px); }
+  50% { transform: translateY(5px); }
+}
+
+@keyframes zoomInOut {
+  from { transform: scale(0.8); }
+  to { transform: scale(1.5); }
+}
+
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes buttonSquish {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05) rotate(1deg); }
+}

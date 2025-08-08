@@ -1,0 +1,133 @@
+.analyzer-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #b9fbc0, #a0c4ff, #bdb2ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+  font-family: 'Comic Sans MS', cursive;
+}
+
+.analyzer-title {
+  font-size: 3rem;
+  color: #5a189a;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px #fff;
+}
+
+.analyzer-box {
+  background: rgba(255, 255, 255, 0.85);
+  border: 4px dashed #8338ec;
+  border-radius: 30px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 600px;
+  box-shadow: 0 0 25px rgba(255, 105, 180, 0.5);
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+.analyzer-label {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #3a0ca3;
+}
+
+.analyzer-input,
+.analyzer-textarea {
+  padding: 0.8rem 1rem;
+  border: 2px solid #ff99cc;
+  border-radius: 15px;
+  font-size: 1rem;
+  background-color: #fff0f5;
+  box-shadow: inset 0 0 5px #ffccdd;
+  transition: transform 0.2s;
+}
+
+.analyzer-input:focus,
+.analyzer-textarea:focus {
+  outline: none;
+  transform: scale(1.02);
+}
+
+.analyzer-textarea {
+  resize: none;
+  height: 100px;
+}
+
+.analyze-btn {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #8d05a8;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s;
+  font-weight: bold;
+  box-shadow: 0 4px 10px rgba(255, 51, 153, 0.3);
+}
+
+.analyze-btn:hover {
+  background-color: #fb8500;
+  transform: scale(1.05);
+}
+
+.rocket {
+  animation: rocket-zoom 1s ease forwards;
+}
+
+@keyframes rocket-zoom {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-500px) scale(1.5);
+    opacity: 0;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/* ✨ Sparkle emojis */
+.sparkle-layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.sparkle-emoji {
+  position: absolute;
+  font-size: 2rem;
+  opacity: 0.8;
+  animation: sparkle-float linear infinite;
+}
+
+@keyframes sparkle-float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-120px) scale(1.5);
+    opacity: 0;
+  }
+}
