@@ -48,3 +48,10 @@ It then generates a roast, a fake certificate, and maybe a therapy recommendatio
 git clone https://github.com/Ish-h/Uselessomter-2.0.git
 cd Uselessomter-2.0
 npm install
+
+**Project Documentation**
+For Software:
+
+Screenshots 
+<img width="1920" height="1080" alt="Screenshot 2025-08-09 053342" src="https://github.com/user-attachments/assets/f44d59f4-0b00-4ab2-a9d0-a2a7863d2369" />
+Made with ❤️ at TinkerHub Useless Projects
